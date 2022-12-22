@@ -44,9 +44,7 @@ public class Main {
         }
         var summ = human1 - human2;
         System.out.println("Год "+ Year + " численность населения составляет " + summ);
-
-
-
+        
 
 
 
