@@ -74,8 +74,7 @@ public class Main {
             if (year > 1820 && year < 2060) {
                 System.out.println(year + " году пролетит комета");
             }
-
-
+            
         }
 
     }
