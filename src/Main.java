@@ -39,14 +39,44 @@ public class Main {
 
         System.out.println(Year);
         for (int i = 0; i < Year; i++) {
-        human1 += 17;
-        human2 += 8;
+            human1 += 17;
+            human2 += 8;
         }
         var summ = human1 - human2;
-        System.out.println("Год "+ Year + " численность населения составляет " + summ);
-        
+        System.out.println("Год " + Year + " численность населения составляет " + summ);
+        System.out.println("Задание 4");
+        //Василий решил положить деньги на накопительный счет, где каждый месяц к сумме его вклада добавляется еще 7%.
+        // Первоначальная сумма вклада — 15 тысяч рублей.
+        // Василию нужно будет копить, чтобы собрать сумму в 12 миллионов
+
+        //Видоизмените программу таким образом, чтобы в консоль выводились не все месяцы подряд, а только каждый шестой.
+        // Должны быть видны накопления за 6, 12, 18, 24-й и следующие месяцы.
+        int balance2 = 15000;
+        var num1 = 1;
+        while (balance2 <= 1200000) {
+            if (num1 % 6 == 0) {
+                System.out.println("За " + num1 + " месяцев накопил " + balance2);
 
 
+            }
+            var summ2 = balance2 % 7 * 100;
+            balance2 += summ2;
+            num1++;
+
+
+        }
+        var day = 1;
+
+        System.out.println("Задание 8");
+        var year = 0000;
+        while (year <= 2200) {
+            year += 79;
+            if (year > 1820 && year < 2060) {
+                System.out.println(year + " году пролетит комета");
+            }
+
+
+        }
 
     }
 }
